@@ -1,0 +1,149 @@
+.card {
+   padding: 2.4rem;
+   background-color: $color-blue-dark-2;
+   border-radius: 1.5rem;
+   box-shadow: 0 2.5rem 5rem rgba(0, 0, 0, 0.09);
+	margin-bottom: 2rem;
+
+   display: grid;
+   grid-template-columns: repeat(2, min-content);
+   row-gap: 1.6rem;
+
+   &__header {
+      grid-column: 1 / -1;
+      position: relative;
+		background-image: url('../../images/image-equilibrium.jpg');
+		background-size: cover;
+
+		width: 30.2rem;
+		aspect-ratio: 1;
+		border-radius: .8rem;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		@media only screen and (max-width: 25em) {
+			width: 27.8rem;
+		}
+
+		&:hover {
+			background-image: linear-gradient(rgba($color-cyan, .5), rgba($color-cyan, .5)), url('../../images/image-equilibrium.jpg');
+			cursor: pointer;
+		}
+
+		&:hover > img {
+			opacity: 1;
+		}
+   }
+
+	&__view-icon {
+		opacity: 0;
+	}
+
+   &__title {
+      grid-column: 1 / -1;
+      color: $color-white;
+      font-size: 2.2rem;
+      font-weight: 900;
+      padding-top: 0.8rem;
+
+		&:hover {
+			color: $color-cyan;
+			cursor: pointer;
+		}
+   }
+
+   &__text {
+      grid-column: 1 / -1;
+      font-weight: 300;
+      font-size: 1.8rem;
+      line-height: 2.6rem;
+      color: $color-soft-blue;
+      padding-top: 0.2rem;
+      padding-bottom: 0.8rem;
+   }
+
+   &__value {
+      grid-column: 1 / span 1;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+   }
+
+   &__eth-text {
+      font-weight: 900;
+      color: $color-cyan;
+      font-size: 1.6rem;
+      padding-top: 4px;
+   }
+
+   &__days-text {
+      color: $color-soft-blue;
+      font-size: 1.6rem;
+      font-weight: 400;
+      padding-top: 2px;
+   }
+
+   &__icon {
+      &--eth {
+         width: 1.1rem;
+         margin-right: 0.65rem;
+         padding-top: 2px;
+      }
+
+      &--clock {
+         width: 1.6rem;
+         height: 1.6rem;
+         margin-right: 0.65rem;
+      }
+   }
+
+   &__time {
+      grid-column: 2 / -1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+   }
+
+   &__creation {
+      grid-column: 1 / -1;
+
+      display: flex;
+      align-items: center;
+   }
+
+   &__avatar {
+      width: 3.3rem;
+      height: 3.3rem;
+      margin-right: 1.6rem;
+      border: 1px solid $color-white;
+      border-radius: 50%;
+   }
+
+   &__creation-text {
+      color: $color-soft-blue;
+      font-size: 1.6rem;
+      font-weight: 400;
+
+		
+
+      &--bold {
+         color: $color-white;
+         margin-left: 5px;
+
+			&:hover {
+				color: $color-cyan;
+				cursor: pointer;
+			}
+      }
+   }
+}
+
+.line {
+   grid-column: 1 / -1;
+   height: 1px;
+   margin-top: 0.8rem;
+   width: 100%;
+   background-color: $color-blue-dark-1;
+}

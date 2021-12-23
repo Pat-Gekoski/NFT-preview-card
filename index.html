@@ -1,29 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | NFT preview card component</title>
+      <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet" />
+      <link rel="stylesheet" href="css/style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
+      <title>Frontend Mentor | NFT preview card component</title>
 
-<body>
+      <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+      <style>
+         .attribution {
+            font-size: 11px;
+            text-align: center;
+				color: rgb(199, 194, 194);
+         }
+         .attribution a {
+            color: hsl(113, 46%, 37%);
+         }
+      </style>
+   </head>
 
-	
-  
+   <body>
+      <div class="container">
+         <div class="card">
+            <div class="card__header">
+               <img src="images/icon-view.svg" alt="view icon" class="card__view-icon" />
+            </div>
 
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Patric Gekoski</a>.
-  </div> -->
-</body>
+            <h3 class="card__title">Equilibrium #3429</h3>
+            <p class="card__text">Our Equilibrium collection promotes balance and calm</p>
+            <div class="card__value">
+               <img src="./images/icon-ethereum.svg" alt="Etherium icon" class="card__icon card__icon--eth" />
+               <p class="card__eth-text">0.041 ETH</p>
+            </div>
+            <div class="card__time">
+               <img src="./images/icon-clock.svg" alt="Clock icon" class="card__icon card__icon--clock" />
+               <p class="card__days-text">3 days left</p>
+            </div>
+            <div class="line"></div>
+            <div class="card__creation">
+               <img src="images/image-avatar.png" alt="avatar" class="card__avatar" />
+               <p class="card__creation-text">Creation of <span class="card__creation-text--bold">Jules Wyvern</span></p>
+            </div>
+         </div>
 
+			<div class="attribution">
+				Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+				<a href="https://github.com/Pat-Gekoski/NFT-preview-card.git">Patric Gekoski</a>.
+			</div>
+      </div>
+
+      
+
+   </body>
 </html>
